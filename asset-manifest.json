@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/react-food-order-app/static/css/main.7acaea2f.css",
-    "main.js": "/react-food-order-app/static/js/main.7b876fa1.js",
+    "main.js": "/react-food-order-app/static/js/main.08c90a10.js",
     "static/media/sushi.jpg": "/react-food-order-app/static/media/sushi.a2b4b921ab28b2b3f6c7.jpg",
     "index.html": "/react-food-order-app/index.html",
     "main.7acaea2f.css.map": "/react-food-order-app/static/css/main.7acaea2f.css.map",
-    "main.7b876fa1.js.map": "/react-food-order-app/static/js/main.7b876fa1.js.map"
+    "main.08c90a10.js.map": "/react-food-order-app/static/js/main.08c90a10.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.7b876fa1.js"
+    "static/js/main.08c90a10.js"
   ]
 }
