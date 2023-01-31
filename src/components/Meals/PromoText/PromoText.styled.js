@@ -5,7 +5,7 @@ export const PromoTextWrapper = styled.section`
   max-width: 45rem;
   width: 90%;
   margin: auto;
-  margin-top: 14rem;
+  margin-top: 11rem;
   position: relative;
   background-color: #6b068ae8;
   color: white;

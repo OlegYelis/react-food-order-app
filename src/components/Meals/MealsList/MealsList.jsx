@@ -1,3 +1,5 @@
+import { Card } from 'components/UI/Card';
+import { MealItem } from './MealItem/MealItem';
 import { MealsListWrapper } from './MealsList.styled';
 
 const DUMMY_MEALS = [
@@ -31,12 +33,21 @@ const DUMMY_MEALS = [
 
 export const MealsList = () => {
   const mealList = DUMMY_MEALS.map(meal => {
-    return <li key={meal.id}>{meal.name}</li>;
+    return (
+      <MealItem
+        key={meal.id}
+        name={meal.name}
+        description={meal.description}
+        price={meal.price}
+      />
+    );
   });
 
   return (
     <MealsListWrapper>
-      <ul>{mealList}</ul>
+      <Card>
+        <ul>{mealList}</ul>
+      </Card>
     </MealsListWrapper>
   );
 };
