@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const ItemFormWrapper = styled.div`
+export const ItemFormWrapper = styled.form`
   text-align: right;
 
   button {

@@ -1,4 +1,4 @@
-import { Card } from 'components/UI/Card';
+import { Card } from 'components/UI/Card/Card';
 import { MealItem } from './MealItem/MealItem';
 import { MealsListWrapper } from './MealsList.styled';
 

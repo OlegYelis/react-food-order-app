@@ -2,6 +2,7 @@ import styled from '@emotion/styled';
 
 export const ItemWrapper = styled.li`
   display: flex;
+  align-items: center;
   justify-content: space-between;
   margin: 1rem;
   padding-bottom: 1rem;

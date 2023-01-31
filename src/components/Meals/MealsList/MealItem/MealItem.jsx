@@ -1,4 +1,5 @@
 import { MealDescription, ItemWrapper, MealPrice } from './MealItem.styled';
+import { MealItemForm } from './MealItemForm/MealItemForm';
 
 export const MealItem = ({ name, description, price }) => {
   const formattedPrice = `$${price.toFixed(2)}`;
@@ -10,7 +11,9 @@ export const MealItem = ({ name, description, price }) => {
         <MealDescription>{description}</MealDescription>
         <MealPrice>{formattedPrice}</MealPrice>
       </div>
-      <div></div>
+      <div>
+        <MealItemForm />
+      </div>
     </ItemWrapper>
   );
 };
