@@ -1,13 +1,13 @@
 import { Input } from 'components/UI/Input/Input';
 import { ItemFormWrapper } from './MealItemForm.styled';
 
-export const MealItemForm = () => {
+export const MealItemForm = ({ id }) => {
   return (
     <ItemFormWrapper>
       <Input
         label="Кількість"
         input={{
-          id: 'amount',
+          id: id,
           type: 'number',
           min: '1',
           step: '1',
