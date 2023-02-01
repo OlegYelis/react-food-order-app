@@ -1,8 +1,8 @@
 import { BackdropWrapper, ModalWrapper } from './Modal.styled';
 import ReactDOM from 'react-dom';
 
-const Backdrop = () => {
-  return <BackdropWrapper></BackdropWrapper>;
+const Backdrop = ({ onHideCart }) => {
+  return <BackdropWrapper onClick={onHideCart}></BackdropWrapper>;
 };
 
 const ModalWindow = ({ children }) => {
@@ -15,10 +15,13 @@ const ModalWindow = ({ children }) => {
 
 const portalElement = document.getElementById('overlays');
 
-export const Modal = ({ children }) => {
+export const Modal = ({ onHideCart, children }) => {
   return (
     <>
-      {ReactDOM.createPortal(<Backdrop />, portalElement)}
+      {ReactDOM.createPortal(
+        <Backdrop onHideCart={onHideCart} />,
+        portalElement
+      )}
       {ReactDOM.createPortal(
         <ModalWindow>{children}</ModalWindow>,
         portalElement

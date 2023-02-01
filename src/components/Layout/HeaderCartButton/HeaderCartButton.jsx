@@ -5,9 +5,9 @@ import {
   IconWrapper,
 } from './HeaderCartButton.styled';
 
-export const HeaderCartButton = () => {
+export const HeaderCartButton = ({ onClick }) => {
   return (
-    <CartButton>
+    <CartButton onClick={onClick}>
       <IconWrapper>
         <CartIcon />
       </IconWrapper>
