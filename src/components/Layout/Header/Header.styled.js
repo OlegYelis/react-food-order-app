@@ -1,6 +1,11 @@
 import styled from '@emotion/styled';
 
 export const HeaderWrapper = styled.header`
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  width: 100%;
   background-color: #6b068a;
   color: white;
   display: flex;
